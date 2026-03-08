@@ -5,3 +5,4 @@ numpy
 streamlit-webrtc
 av
 mtcnn
+gdown
