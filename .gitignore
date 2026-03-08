@@ -1,6 +1,6 @@
 # Python cache
 __pycache__/
-.idea
+.idea/
 *.pyc
 *.pyo
 *.pyd
