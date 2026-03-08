@@ -1,18 +1,23 @@
-Face Mask Detection (Real-Time)
+# Real-Time Face Mask Detector
 
-Tech Stack
-- Python
-- TensorFlow (CNN mask classifier)
-- MTCNN (face detection)
-- OpenCV
-- Streamlit
-- streamlit-webrtc
+This is a **real-time face mask detection app** built using:
 
-Pipeline
-Webcam → Face Detection → Mask Classification → Live Visualization
+- **MTCNN** for face detection
+- **TensorFlow/Keras** for mask/no mask classification
+- **Streamlit + Streamlit-webrtc** for live video processing
 
-Features
-- Real-time webcam detection
-- Mask / No-mask classification
-- Bounding boxes
-- Live analytics
+The model is downloaded dynamically from Google Drive using `gdown`, so the repository stays lightweight.
+
+## Features
+
+- Real-time face detection from webcam
+- Mask/No Mask classification with bounding boxes
+- Live analytics sidebar showing detection statistics
+- Lightweight, production-ready, and deployable on Hugging Face Spaces
+
+## How to Run Locally
+
+1. Clone the repo:
+   ```bash
+   git clone <repo-url>
+   cd face-mask-detector-app
