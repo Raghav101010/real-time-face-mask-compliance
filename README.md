@@ -1,3 +1,13 @@
+---
+title: Real-Time Face Mask Detection
+emoji: 😷
+colorFrom: blue
+colorTo: green
+sdk: docker
+app_file: src/streamlit_app.py
+pinned: false
+---
+
 # Real-Time Face Mask Detector
 
 This is a **real-time face mask detection app** built using:
