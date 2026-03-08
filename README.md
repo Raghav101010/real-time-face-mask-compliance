@@ -21,3 +21,17 @@ The model is downloaded dynamically from Google Drive using `gdown`, so the repo
    ```bash
    git clone <repo-url>
    cd face-mask-detector-app
+
+2. Create a virtual environment:
+
+    python -m venv .venv
+    .venv\Scripts\activate   # Windows
+    source .venv/bin/activate # Linux/Mac
+
+3. Install dependencies:
+
+    pip install -r requirements.txt
+
+4. Run the app:
+
+    streamlit run app.py
