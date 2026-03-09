@@ -2,12 +2,19 @@ FROM python:3.9
 
 WORKDIR /app
 
-# Install system dependencies required by PyAV / streamlit-webrtc
+# Install system dependencies required by PyAV
 RUN apt-get update && apt-get install -y \
     ffmpeg \
+    pkg-config \
+    libavformat-dev \
+    libavcodec-dev \
+    libavdevice-dev \
+    libavutil-dev \
+    libavfilter-dev \
+    libswscale-dev \
+    libswresample-dev \
     libsm6 \
     libxext6 \
-    pkg-config \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
